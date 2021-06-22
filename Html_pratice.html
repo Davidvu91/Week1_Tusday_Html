@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="CSS-pratice.css">
+</head>
+<body>
+    <!--Assignment 1 - HTML comment-->
+    <section id="section1">
+        <h3>In this course we'll learn:</h3>
+         <p>HTML & CSS</p>
+         <p>Python</p> <!--This is the second line-->
+         <p>Javascript</p>
+    </section>
+
+    <!--Assignment 2 - Hyperlink 1-->
+    <section id="section2">
+        <a href="https://www.coderschool.vn/vi/web-development/" target="-blank">        
+            Well come to Coderschool
+        </a>
+    </section>
+
+    <!--Assignment 3 - Hyperlink 2-->
+    <section>
+        <a href="#section1"> Comeback to Section1</a>
+    </section>
+
+    <!--Assignment 4 - Hyperlink 3-->
+    <section>
+        <a href="#section2">Comeback to section 2 (target = blank)</a>
+    </section>
+
+    <!--Assignment 5 - Article-->
+    <section>
+        <h1>Well come to my Blog</h1>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old
+        </p>
+        <a href="https://www.lipsum.com/" target="blank">
+            Click here to learn more
+        </a>
+    </section>
+
+    <!--Assignment 6 - Audio-->
+    <section>
+        <audio controls autoplay>
+            <source src="/assets/Hal.mp3">
+        </audio>
+    </section>
+    <!--Assignment 7 - Video-->
+    <section>
+        <p>This is the video</p>
+        <video src="http://webcoban.vn/file/bunny.mp4" controls></video>
+    </section> 
+
+    <!--Assignment 8 - Image-->
+    <section> 
+        <p> The Cute Cat</p>
+        <img src="https://i.pinimg.com/736x/7f/d3/9e/7fd39efe4322caa04c6dab5cc7a25ae9.jpg" alt="this is the cat with sun glass" height="400px" width="250">
+    </section> 
+
+    <!--Assignment 9 - Bold text-->
+    <section>
+        <b>
+           This is the Bold Text
+        </b>
+    </section> 
+
+    <!--Assignment 10 - Underline text-->
+    <section>
+        <u>
+            This is the underline text
+        </u>
+    </section>  
+
+    <!--Assignment 11 - Strikeout-->
+    <section>
+        <strike>
+            this is the Strike text 
+        </strike>
+    </section> 
+
+    <!--Assignment 12 - Line break-->
+    <section>
+        <br>Add the self-closed tag "br" </br>
+        to break the line</p>
+    </section>
+
+    <!--Assignment 13 - Horizontal line-->
+    <section>
+        <p>This is the top line</p>
+        <hr>
+        <p>This is the line below</p>
+    </section> 
+
+    <!--Assignment 14 - Unordered List-->
+    <section>
+        <h3>This is unodered list</h3>
+        <ul>
+            <li>Tea</li>
+            <li>coffee</li>
+            <li>Milk</li>
+            <li>Cocacola</li>
+        </ul>
+    </section> 
+
+    <!--Assignment 15 - Ordered List-->
+    <section>
+        <h3>This is unodered list</h3>
+        <ol>
+            <li>sofa</li>
+            <li>closet</li>
+            <li>carpit</li>
+            <li>table</li>
+        </ol>
+    </section>  
+
+    <!--Assignment 16 - Definition list-->
+    <section>
+    <h1>The dl, dd, and dt elements</h1>
+
+     <p>These three elements are used to create a description list:</p>
+
+    <dl>
+    <dt>Coffee</dt>
+     <dd>Black hot drink</dd>
+    <dt>Milk</dt>
+     <dd>White cold drink</dd>
+    </dl>
+    </section>  
+
+    <!--Assignment 17 - Button--> 
+    <section>
+        <button name="button" value="OK" type="button" onclick="hello()">Click Here</button>  
+     <script>  
+     function hello(){  
+       alert("Hifriend");  
+     }  
+     </script>
+    </section>
+
+    <!--Assignment 18 - Table-->
+
+    <section> 
+        <h3>This is the Table with 3 rows anh 3 columnes</h3>
+        <table style="width:60%" border="1px solid black">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+          </table>
+    </section>
+
+    <!--Assignment 19 - Navigation Links-->
+    <section> 
+        <h3> This is the Navigator Links Bar</h3>
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/python/">Python</a>
+        </nav>
+    </section> 
+    
+    <!--Assignment 20 - Toggable Detail-->
+    <section> 
+        <h3>
+        This is toggable block of content with a summary and additional details
+        </h3>
+        <details>
+            <summary>Read more</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+        </details>
+    </section> 
+
+    <!--Assignment 21 - Form-->
+    <section>
+        <h3> Form with placeholder</h3>
+        <form action="/action_page.php" method="get">
+            <label for="fname">Email:</label>
+            <input type="text" id="fname" name="fname" placeholder="Put your emal here"><br><br>
+            <label for="lname">Password:</label>
+            <input type="text" id="lname" name="lname" placeholder="Password"><br><br>
+            <label for="lname">Confirm password:</label>
+            <input type="text" id="lname" name="lname" placeholder="Confirm Password"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    </section> 
+
+    <section>
+        <h3> Form with Radio Option</h3>
+        <form>
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">Developer</label><br>
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css">Employer</label><br>
+        </form> 
+    </section> 
+
+    <section>
+        <h3> Form check box like this</h3>
+        <form action="/action_page.php">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> ReactJS</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> NodeJS</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> Web Design</label><br><br>
+          <input type="submit" value="Submit">
+        </form>
+    </section> 
+
+    <section>
+        <h3>Choose the City you like</h3>
+        <label for="cars">Click arrow to select</label>
+        <select id="cars" name="carlist" form="carform">
+          <option value="volvo">Hanoi</option>
+          <option value="saab">HCM</option>
+          <option value="opel">Danag</option>
+          <option value="audi">Vungtau</option>
+        </select>
+    </section>  
+
+    <section> 
+        <h3>Form texbox like this </h3>
+        <form action="/action_page.php" id="usrform">
+            Name: <input type="text" name="usrname">
+            <input type="submit">
+          </form>
+          <br>
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+          Enter text here...</textarea>
+    </section>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
